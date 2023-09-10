@@ -1,3 +1,40 @@
+:root {
+	/* colors */
+	--yellow: #f8d24e;
+	--yellow-shade: #efd478;
+	--dark-green: #0a8817;
+	--green-shade: #aec6a5;
+	--dark-orange: #d6936d;
+	--gray: #ababab;
+	--white: #ffffff;
+	--white-shade: #fcfcfc;
+	--black: #000000;
+	--black-shade: #131313;
+}
+body {
+	font-size: var(--font-size-normal);
+	color: var(--black-shade);
+	font-family: "Montserrat", sans-serif;
+}
+
+/* utlity classes */
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+menu {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+menu {
+	list-style: none;
+}
+
 .products-label {
 	font-size: 18px;
 	font-weight: 800;
