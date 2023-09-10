@@ -34,7 +34,89 @@ ul,
 menu {
 	list-style: none;
 }
+.bg-ice {
+	background-image: url("../images/background/background-mobile-1x.png");
+	background-position: center top;
+	background-repeat: repeat-y repeat-x;
+}
 
+@media screen and (min-width: 768px) {
+	.bg-ice {
+		background-image: url("../images/background/background-tablet-1x.png");
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.bg-ice {
+		background-image: url("../images/background/background-desktop-1x.png");
+	}
+}
+
+@media (min-device-pixel-ratio: 2),
+	(-webkit-min-device-pixel-ratio: 2),
+	(-o-min-device-pixel-ratio: 2/1),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+	.bg-ice {
+		background-image: url("../images/background/background-mobile-2x.png");
+		background-position: center top;
+		background-repeat: repeat-y;
+	}
+
+	@media screen and (min-width: 768px) {
+		.bg-ice {
+			background-image: url("../images/background/background-tablet-2x.png");
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.bg-ice {
+			background-image: url("../images/background/background-desktop-2x.png");
+		}
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 704px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1168px;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+/* Klasa do ukrywania tytułu */
+.h-hidden {
+	display: none;
+}
+/*                                                 */
 .products-label {
 	font-size: 18px;
 	font-weight: 800;
